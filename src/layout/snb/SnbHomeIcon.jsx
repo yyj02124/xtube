@@ -5,6 +5,7 @@ const SnbHomeIcon = ({ props, path, menuname }) => {
   return (
     <Box
       height={74}
+      width={72}
       display="flex"
       flexDirection="column"
       justifyContent="center"
@@ -15,10 +16,12 @@ const SnbHomeIcon = ({ props, path, menuname }) => {
       </SvgIcon>
 
       <Typography
+        mt={1}
         textAlign="center"
-        fontSize="11px"
+        fontSize="10px"
         fontWeight="400"
-        lineHeight="11px"
+        fontFamily="Roboto, Arial, sans-serif"
+        lineHeight="10px"
       >
         {menuname}
       </Typography>

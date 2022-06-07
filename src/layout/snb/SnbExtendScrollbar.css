@@ -1,0 +1,21 @@
+.snbExtended {
+  overflow: scroll;
+}
+
+.snbExtended::-webkit-scrollbar {
+  width: 8px;
+}
+.snbExtended::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+
+.snbExtended::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px #fff;
+}
+
+.hoverBar:hover .snbExtended::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}

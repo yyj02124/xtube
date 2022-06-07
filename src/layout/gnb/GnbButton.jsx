@@ -7,9 +7,13 @@ const GnbButton = ({ btnname }) => {
       variant="outlined"
       sx={{
         height: "32px",
-        marginLeft: "10px",
-        padding: "3px",
+        marginLeft: "12px",
+        padding: "0,12px",
         borderRadius: "16px",
+        borderColor: "#dbdbdb",
+        bgcolor: "#f2f2f2",
+        fontSize: "14px",
+        fontFamily: "Roboto, Arial, sans-serif",
       }}
     >
       {btnname}
