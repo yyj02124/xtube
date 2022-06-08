@@ -1,4 +1,4 @@
-import { Box, Button, SvgIcon, TextField } from "@mui/material";
+import { Box, Button, Link, SvgIcon, TextField } from "@mui/material";
 import React, { useState } from "react";
 import Gnb from "./gnb/Gnb";
 import AppLnb from "./lnb/applnb/AppLnb";
@@ -39,16 +39,18 @@ const Header = ({ snbOpen, onSnbClick }) => {
               <path d="M 21 6 H 3 V 5 h 18 V 6 Z M 21 11 H 3 v 1 h 18 V 11 Z M 21 17 H 3 v 1 h 18 V 17 Z" />
             </SvgIcon>
           </Button>
-          <Box
-            component="img"
-            alt="tube"
-            src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg"
-            sx={{
-              width: "84px",
-              height: "40px",
-              margin: "4px",
-            }}
-          />
+          <Link href="/">
+            <Box
+              component="img"
+              alt="tube"
+              src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg"
+              sx={{
+                width: "84px",
+                height: "40px",
+                margin: "4px",
+              }}
+            />
+          </Link>
         </Box>
         <Box>
           <TextField

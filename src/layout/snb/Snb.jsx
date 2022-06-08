@@ -4,10 +4,11 @@ import Footer from "../footer/Footer";
 import SnbExtendedHomeIcon from "./SnbExtendedHomeIcon";
 import SnbExtendedImgIcon from "./SnbExtendedImgIcon";
 import SnbHomeIcon from "./SnbHomeIcon";
+import "./extendedscrollbar.css";
 
 const Snb = ({ snbOpen }) => {
   return (
-    <Box className="hoverBar" position="fixed" display="flex">
+    <Box zIndex={15} className="hoverBar" position="fixed" display="flex">
       {snbOpen === true ? (
         <Box
           className="snbExtended"
@@ -17,7 +18,6 @@ const Snb = ({ snbOpen }) => {
         >
           <Box
             width={222}
-            mt={-1.2}
             position="relative"
             display="flex"
             flexDirection="column"

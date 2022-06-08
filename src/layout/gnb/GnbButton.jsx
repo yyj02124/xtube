@@ -1,9 +1,10 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-const GnbButton = ({ btnname }) => {
+const GnbButton = ({ btnname, onclick, bgcolor, color }) => {
   return (
     <Button
+      onClick={onclick}
       variant="outlined"
       sx={{
         height: "32px",
@@ -11,7 +12,8 @@ const GnbButton = ({ btnname }) => {
         padding: "0,12px",
         borderRadius: "16px",
         borderColor: "#dbdbdb",
-        bgcolor: "#f2f2f2",
+        bgcolor,
+        color,
         fontSize: "14px",
         fontFamily: "Roboto, Arial, sans-serif",
       }}
