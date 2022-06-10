@@ -1,5 +1,5 @@
 import { Avatar, Box, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import { faker } from "@faker-js/faker";
 
 const XtubeContent = () => {
@@ -50,4 +50,4 @@ const XtubeContent = () => {
   );
 };
 
-export default XtubeContent;
+export default React.memo(XtubeContent);

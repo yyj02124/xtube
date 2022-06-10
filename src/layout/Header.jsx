@@ -1,13 +1,18 @@
 import { Box, Button, Link, SvgIcon, TextField } from "@mui/material";
 import React, { useState } from "react";
+
 import Gnb from "./gnb/Gnb";
 import AppLnb from "./lnb/applnb/AppLnb";
 import SettingLnb from "./lnb/settinglnb/SettingLnb";
-import Snb from "./snb/Snb";
 
 const Header = ({ snbOpen, onSnbClick }) => {
   const [appLnbOpen, setAppLnbOpen] = useState(false);
   const [settingLnbOpen, setsettingLnbOpen] = useState(false);
+
+  // const [snbOpen, setSnbOpen] = useState(false);
+  // const onSnbClick = () => {
+  //   setSnbOpen(!snbOpen);
+  // };
 
   const onSettingLnbClick = () => {
     setsettingLnbOpen(!settingLnbOpen);
@@ -17,12 +22,7 @@ const Header = ({ snbOpen, onSnbClick }) => {
     setAppLnbOpen(!appLnbOpen);
   };
   return (
-    <Box
-      position="fixed"
-      // mt={-8}
-      sx={{ width: 1, bgcolor: "#ffffff" }}
-      zIndex={1}
-    >
+    <Box position="fixed" sx={{ width: 1, bgcolor: "#ffffff" }} zIndex={1}>
       <Box
         height={50}
         pt={1}
@@ -126,7 +126,7 @@ const Header = ({ snbOpen, onSnbClick }) => {
         </Box>
       </Box>
       <hr />
-      <Snb snbOpen={snbOpen} />
+
       <Gnb gnbDisplay={snbOpen} />
     </Box>
   );

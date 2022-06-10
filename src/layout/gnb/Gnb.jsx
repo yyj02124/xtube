@@ -5,21 +5,21 @@ import GnbButton from "./GnbButton";
 const Gnb = ({ gnbDisplay }) => {
   const [tap, setTap] = useState("전체");
   return (
-    <>
-      <Box
-        zIndex={5}
-        pb={1}
-        position="absolute"
-        right={0}
-        display="flex"
-        flexDirection="row"
-        justifyContent={"center"}
-        sx={
-          gnbDisplay === true
-            ? { width: "85%", float: "right" }
-            : { width: "100%" }
-        }
-      >
+    <Box
+      zIndex={1}
+      pb={1}
+      position="fixed"
+      right={0}
+      display="flex"
+      flexDirection="column"
+      justifyContent={"center"}
+      sx={
+        gnbDisplay === true
+          ? { width: "85%", float: "right", bgcolor: "#fff" }
+          : { width: "100%", float: "right", bgcolor: "#fff" }
+      }
+    >
+      <Box display="flex" justifyContent={"center"}>
         <GnbButton
           btnname="전체"
           onclick={() => setTap("전체")}
@@ -85,8 +85,8 @@ const Gnb = ({ gnbDisplay }) => {
           color={tap === "최근에 업로드된 영상" ? "#fff" : "#000"}
         />
       </Box>
-      <Box mt={6} borderBottom="1px solid #ccc" />
-    </>
+      <Box mt={1} borderBottom="1px solid #ccc" />
+    </Box>
   );
 };
 

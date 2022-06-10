@@ -4,7 +4,14 @@ import FooterLink from "./FooterLink";
 
 const Footer = () => {
   return (
-    <Box width={220} mb={1} pl={2} borderBottom="1px solid #bbbbbb">
+    <Box
+      zIndex={10}
+      width={220}
+      mb={1}
+      pl={2}
+      borderBottom="1px solid #bbbbbb"
+      sx={{ bgcolor: "#ffffff" }}
+    >
       <FooterLink contents="정보" href="https://www.youtube.com/about/" />
       <FooterLink contents="보도자료" href="https://www.youtube.com/about/" />
       <FooterLink contents="저작권" href="https://www.youtube.com/about/" />

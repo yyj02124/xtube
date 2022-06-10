@@ -1,7 +1,7 @@
 import { Box, SvgIcon, Typography } from "@mui/material";
 import React from "react";
 
-const SnbHomeIcon = ({ props, path, menuname }) => {
+const SnbHomeIcon = ({ path, menuname }) => {
   return (
     <Box
       height={74}
@@ -11,7 +11,7 @@ const SnbHomeIcon = ({ props, path, menuname }) => {
       justifyContent="center"
       alignItems="center"
     >
-      <SvgIcon {...props}>
+      <SvgIcon>
         <path d={path} />
       </SvgIcon>
 
